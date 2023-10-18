@@ -13,12 +13,12 @@ This shebang indicates that the subsequent code is to be run using a python inte
 
 This shebang indicated that you want to use the currently loaded conda environment and not the default python that comes with terminal. Heres an example of a quick script that we will call hello.py. Note, the general convention is to name python scripts with the .py extension
 
-`
+``` Python
 #!/usr/bin/env python
 print("Hello World")
-`
+```
 
 To run the script simply
-`
+``` Bash
 ./hello.py
-`
+```
