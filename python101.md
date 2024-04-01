@@ -16,7 +16,7 @@ print(__Bio.version__)
 
 It is also possible to import packages under variable names. This can be useful for reducing texts in scripts. 
 
-```
+``` Python
 import numpy as np
 ```
 # Defining and using variables
