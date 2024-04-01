@@ -14,6 +14,11 @@ To see what version of any loaded packages, you can use the the following. Alter
 print(__Bio.version__)
 ```
 
+It is also possible to import packages under variable names. This can be useful for reducing texts in scripts. 
+
+```
+import numpy as np
+```
 # Defining and using variables
 Variables can be very useful in python and defining them is quite easy. Essentially, all you need to do is some variation of NAME = VALUE. The value you set for a variable can either be something you directly define (e.g. a particular number) or the result of a function. See below for some examples.
 
