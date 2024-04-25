@@ -1,2 +1,2 @@
 # LearningPython
-Repository for resources developed for learning python
+Repository of notes used for learning python
