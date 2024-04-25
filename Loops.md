@@ -10,7 +10,7 @@ for i in range(0,n):
   print(i)
 ``` 
 
-It is also possible it iterate over a more complex ranges using things like lists for dictionaries in python
+It is also possible it iterate over other data types using things like lists or dictionaries in python
 ``` python
 L=["bigfoot","mothman","aliens","yeti"] #make a list
 for i in L:
@@ -54,6 +54,34 @@ for i in range(0,n):
 ```
 
 ## Loop control ##
+There are several different ways that loops can be modified to offer a greater level of control over how the loop iterates over the data. For instance, its possible to skip some or all of the data. See below for examples of how to use `continue`, `pass`, and `break` in loops
+
+### Using continue ###
+`continue` is essentially the same as skipping over a portion of the data. For instance, in the below loop we can set it up so we skip over all of the odd numbers
+
+``` python
+for i in range(0,11):
+  if (i % 2) == 1: #The % basically gets you the remander so odd numbers = 1 and even numbers are = 0. When this is true, then the number gets skipped
+    continue
+  print(i)
+```
+### Using pass ###
+`pass` is used to create an empty loop that only returns the result of the last iteration. 
+``` python
+for i in range(0,11):
+  pass
+
+print(i)
+```
+
+### Using break ###
+`break` is used to end the loop when some condition is met. So in this example the loop stops when it gets to the first odd number 
+``` python
+for i in range(0,11):
+  if (i % 2) == 1: 
+    break
+  print(i)
+```
 
 ## Other considerations ##
 One important note is when setting the range for loops the second number in a set range is not included. For instance in the first example, the loop only printed out numbers 0-9 despite the fact the value of n was 10. There are two soultions to this. One you can remeber this programming quirk and intentionally use it while programming. Alternatively, you can write loops in a way that is inclusive of the entire range. See below for some examples
