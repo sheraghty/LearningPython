@@ -17,12 +17,12 @@ parser.add_argument('-out', metavar='--O', help='Name of the output file.')
 args = parser.parse_args()
 
 #The list of headers to remove gets saved as a set names remove
-remove = set()
+keep = set()
 with open(args.keep) as f:
     for line in f:
         line = line.strip()
         if line != "":
-            remove.add(line) #The last if loop is to make sure no blank lines are included in the set 
+            keep.add(line) #The last if loop is to make sure no blank lines are included in the set 
 
 #Biopython removes > by default, so need to make sure the list to remove does not include this character either 
 
