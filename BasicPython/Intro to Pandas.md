@@ -42,4 +42,16 @@ df1 = pd.DataFrame(data)
 ```
 Note: like with a series, we can modiy the index names.
 
-Reading in data from an external source can be a little tricky depending on both the source of the data and the format that it is saved in. However, it is fairly easy if you have a csv file that is already present in your working directory. We'll practice reading in the EXAMPLE file, which shows the final standings of the 2024 WNBA season. 
+Reading in data from an external source can be a little tricky depending on both the source of the data and the format that it is saved in. However, it is fairly easy if you have a csv file that is already present in your working directory. We'll practice reading in the example file, which shows the final standings of the 2024 WNBA season. 
+
+```python
+df_imp = pd.read_csv("wnba_24_example.csv")
+df_imp
+```
+
+# Basic manipulations #
+## Adding and removing data##
+
+## Combining ##
+
+## Basic stats ##
