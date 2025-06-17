@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(
                     epilog='see GitHub for more help') #This creates the basic framework
 
 parser.add_argument('-fasta', metavar='--fa', help='Fasta file to be filtered') 
-parser.add_argument('-sizeFilter', metavar='--S',type=int, help='A text file with a list of sequences to remove. The names should not start with the > character')
+parser.add_argument('-sizeFilter', metavar='--S',type=int, help='The minimum size of sequeneces to retain')
 parser.add_argument('-out', metavar='--O', help='Name of the output file.')
 #-h for help is a default argument
 
